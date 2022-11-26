@@ -1,1 +1,0 @@
-# LegitShopGen.github.io
