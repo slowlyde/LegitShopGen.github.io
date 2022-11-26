@@ -1,0 +1,188 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap" rel="stylesheet"> 
+<title>Legitshopil Generator</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta property="og:type" content="website">
+<meta property="og:description" content="Discord Nitro Generator" />
+<meta property="og:url" content="https://slowlyde.github.io/LegitShopGen/index.html" />
+<meta property="og:image" content="https://images.discordapp.net/avatars/482584715673600026/3813e13cf3e89eb5ab314dcda58f5d96.png?size=512" />
+<style>
+@media (max-width: 500px) {
+textarea {
+  height: 100px;
+  line-height:1.25;
+ 
+}
+button {
+	background-color:#040404;
+	cursor:pointer;
+	color:#0095ff;
+	font-family:Arial;
+	font-size:50px;
+	padding:50px 60px;
+	text-decoration:none;
+	margin: auto;
+    text-align: center;
+}
+}
+
+.button0 {
+  font-size:20px;
+  padding:50px 60px;
+  margin: auto;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<style>
+  textarea {
+    background-color: rgb(0, 35, 66);
+    border: 1px solid rgb(255, 255, 255);
+    color: #fcfffc;
+    padding: 8px;
+	margin: auto;
+    font-family: 'Assistant';
+	text-align: center;
+}
+
+body {
+    background-color: rgb(0, 26, 49);
+}
+
+input {
+    background-color: rgb(0, 47, 255);
+    color: #ffffff;
+	border-radius: 5px;
+	margin: auto;
+	font-family: 'Assistant';
+	margin: auto;
+	margin: auto;
+  text-align: center;
+}
+
+.button {
+  border-radius: 15px;
+  background-color:  rgb(36, 36, 36);
+  box-shadow: 0 5px 5px 0 rgba(0, 5, 5, 5.5);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Assistant';
+  padding: 15px;
+  width: 150px;
+  height: 55px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+} 
+.button:hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+  color: white;
+  background-color: rgb(0, 40, 75);
+  box-shadow: 0 5px 5px 0 rgb(23, 23, 23);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 15px;
+  
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.button2 {
+  border-radius: 15px;
+  background-color: #003d8c;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Assistant';
+  padding: 15px;
+  width: 150px;
+  height: 55px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 3px;
+  margin: auto;
+  text-align: center;
+}
+.button2:hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+  color:  #004f98;
+  background-color: rgb(255, 242, 224);
+  box-shadow: 0 7px 13px 0 rgba(5, 5, 5, 5.5);
+  
+}
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -0.5;
+  right: -5px;
+  transition: 0.2s;
+}
+.button2:hover span {
+  padding-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+.button2:hover span:after {
+  opacity: 22;
+  position: "center";
+  right: 8;
+}
+
+</style>
+<div>
+<h1 style="font-family: Assistant; color: #0099ff; text-align: left;">Legitshopil GENERATOR</h1>
+<textarea id="a" rows="11" cols="55" readonly style="resize: none;" margin="auto;">
+Thank You For Buying (;
+――――――――――――――――――――――――――――
+Legitshopil GENERATOR.
+――――――――――――――――――――――――――――
+
+</textarea>
+<p></p>
+<p></p>
+<p style="font-family: Assistant; color: #00c3ff"> 5 Codes Per Second(you can change it)</p>
+<input type="text" id="speed" value="5">
+<p></p>
+<button id='generate' class="button2"><span>START</span></button>
+
+<button id= 'stop' class="button2"><span>STOP</span></button>
+    <p></p>
+<button id='save' class="button2" onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Unchecked Nitro Codes.txt', 'Dumped by [LSIL](http://slowlyde.github.io/LegitShopGen/index0.html)\n\n' + document.getElementById('b').value + '\nDumped by [LSIL](http://slowlyde.github.io/LegitShopGen/index.html)')" class="button"> <span>Log Dump.</button>
+
+<button onclick="stop(); document.getElementById('a').value = 'Thank You For Buying (;\n――――――――――――――――――――――――――――\nLegitshopil GENERATOR.\n――――――――――――――――――――――――――――\n'; document.getElementById('b').value = '';" class="button2" id="clear"> <span>Clear Codes.</button>
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly>
+</textarea>
+	<script src="main.js"></script>
+</div>
+</html>
